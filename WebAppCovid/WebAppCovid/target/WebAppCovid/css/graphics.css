@@ -1,0 +1,45 @@
+header{
+    background-image: linear-gradient(to top, #222222 0%, #3783e0 90%);
+    border: 5px solid black;
+    color: white;
+    height: 50px;
+    position: relative;
+}
+
+.sidebar{
+    background-image: linear-gradient(to top, #222222 0%, #3783e0 90%);
+    border: 5px solid black;
+}
+.colonna{
+    background-image: linear-gradient(to top, #222222 0%, #3783e0 90%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.upload{
+    background-color: #222222;
+    border-color: black;
+    border-radius: 25px;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    position: center;
+}
+.center{
+    text-align: center;
+}
+.logout{
+    width: 100px;
+    height: 40px;
+}
+#img{
+    width: 40px;
+}
+/*SIDEBAR*/
+
+.border{ background-image: linear-gradient(to top, #222222 0%, #3783e0 90%);}
+
+#Dashboard{
+    margin-left: 50px;
+}

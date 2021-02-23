@@ -1,0 +1,646 @@
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: 0.75rem;
+}
+
+html {
+  height: 100%;
+}
+
+.bottoni {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 200px;
+  justify-content: center;
+}
+
+.bg-image {
+  background-image: url("../img/covi.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  border-radius:10px;
+}
+
+.container {
+  margin-top: 15%;
+}
+
+.graphics  {
+  width: 50%;
+  height: 50%;
+}
+
+
+
+form {
+  text-align: center;
+}
+
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 200;
+}
+
+.login,
+.image {
+  min-height: 100vh;
+}
+
+
+.privacy{
+  color: #0361A5;
+  font-size: 13px;
+  padding-top: 20%;
+  font-weight: 500;
+
+}
+
+#renderPeriod {
+  height: 60px !important;
+}
+
+#regions_div{
+
+}
+
+
+#success{
+  background:#03a679;
+  color:#f0f0f0;
+}
+
+#failure{
+  background:#ff3939;
+  color:#f0f0f0;
+}
+
+.notify{
+  position:absolute;
+  top:0px;
+  width:100%;
+  height:0;
+  box-sizing:border-box;
+  color:white;
+  text-align:center;
+  background:rgba(0,0,0,.6);
+  overflow:hidden;
+  box-sizing:border-box;
+  transition:height .2s;
+}
+
+#notifyType:before{
+  display:block;
+  margin-top:15px;
+
+}
+
+.active{
+  height:50px;
+}
+
+.success:before{
+  Content:"Upload completato correttamente!";
+}
+
+.failure:before{
+  Content:"Qualcosa è andato storto...";
+}
+
+
+
+
+
+
+
+/*-----------------------------------*/
+
+.body-privacy{
+  color: rgba(0, 0, 0, 0.664);
+}
+
+.h5-privacy{
+  color: #5c99b5;
+}
+
+.ora{
+  background-color: #0361A5;
+}
+
+th,tr{
+  width: 10%;
+}
+
+.distanzia {
+  margin-right: 8%;
+}
+.ml-30{
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+strong{
+  color: #6497B4;
+}
+
+tbody{
+  text-align: center;
+}
+/*---------------------------------------*/
+
+/*@media screen and (max-width:576px){
+  .font-size-50{
+    font-size:30px;
+  }
+}*/
+
+.privacy:hover{
+  color: #EFB43D;
+}
+.center{
+  text-align: center;
+}
+
+/*--------DASHBOARD--------*/
+
+.colonna{
+  background-image: url("../img/sfondo_azzurro.jpg");
+  background-size: cover;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  font-size: 70px;
+  text-align: center;
+}
+
+.contenitore{
+  height: 100%;
+  width: 100%;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+
+.logout{
+  background-color: #222222;
+  border-color: black;
+  border-radius: 25px;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.logout:hover{
+  color: white;
+  background-color: darkred;
+  text-decoration: none;
+}
+
+header{
+  background-image: linear-gradient(to top, #222222 0%, #3783e0 90%);
+  border: 5px solid black;
+  color: white;
+  height: 10%;
+  position: relative;
+}
+
+footer{
+  background-image: linear-gradient(to bottom, #222222 0%, #3783e0 90%);
+  border: 5px solid black;
+  color: white;
+  height: 10%;
+  position: relative;
+}
+
+.nomeCognomeEmail{
+  text-align: justify;
+}
+
+.pulsanti{
+  font-size: 15px;
+  margin-top: 32px;
+}
+
+.riga{
+  display: flex;
+  height: 80%;
+  width: 100%;
+}
+
+.sidebar{
+  background-image: linear-gradient(to left, #222222 0%, #3783e0 90%);
+
+  border-left: 5px solid black;
+  color: white;
+}
+
+.upload{
+  background-color: #222222;
+  border-color: black;
+  border-radius: 25px;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  position: center;
+}
+
+.upload2{
+  background-color: #222222;
+  border-color: black;
+  border-radius: 25px;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  position: center;
+}
+
+.upload:hover, .upload2:hover{
+  background-color: #555555;
+  color: white;
+  text-decoration: none;
+}
+
+/*-----------------------360px----------------------------------*/
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+
+  body{
+    overflow: hidden;
+  }
+
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-radius:10px;
+    top: 50px;
+  }
+
+  .colonna {
+    background-image: url("../img/sfondo_azzurro.jpg");
+    background-size: cover;
+    border-right: 5px solid black;
+    font-size: 25px;
+    text-align: center;
+    width: 70%;
+  }
+
+  .contenitore{
+    height: 100%;
+    width: 100%;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+
+  .contenitoreGrafici{
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+
+  .inserisciFile{
+    font-size: 10px;
+  }
+
+  .nomeCognomeEmail{
+    text-align: justify;
+  }
+
+  header{
+    background-image: linear-gradient(to top, #222222 0%, #3783e0 100%);
+    border: 5px solid black;
+    color: white;
+    height: 10%;
+    position: relative;
+  }
+
+  footer{
+    background-image: linear-gradient(to bottom, #222222 0%, #3783e0 100%);
+    border: 5px solid black;
+    color: white;
+    height: 10%;
+    position: relative;
+  }
+
+  .logout{
+    color: white;
+  }
+
+  .logout:hover{
+    color: white;
+    background-color: darkred;
+    text-decoration: none;
+  }
+
+  .nomeCognomeEmail{
+    text-align: justify;
+  }
+
+  .pulsanti{
+    font-size: 15px;
+    margin-top: 100px;
+  }
+
+  #regions_div{
+    width: 100%;
+    position: relative;
+  }
+
+  .sidebar {
+    background-image: linear-gradient(to left, #222222 0%, #3783e0 90%);
+    /*border-right: 5px solid black;*/
+    border-left: 5px solid black;
+    font-size: 15px;
+    width: 30%;
+  }
+
+  .upload{
+    background-color: #222222;
+    border-color: black;
+    border-radius: 25px;
+    color: white;
+    font-size: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 3px;
+    position: center;
+  }
+
+  .upload2{
+    background-color: #222222;
+    border-color: black;
+    border-radius: 25px;
+    color: white;
+    font-size: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 3px;
+    position: center;
+  }
+}
+
+/*------------------------760px---------------------------------*/
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  body{
+    overflow: hidden;
+  }
+
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius:10px;
+    bottom: 31px;
+  }
+
+  .colonna {
+    background-image: url("../img/sfondo_azzurro.jpg");
+    background-size: cover;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    font-size: 25px;
+    padding-right: 1px;
+    text-align: center;
+    width: 72%;
+  }
+
+  .contenitore{
+    height: 100%;
+    width: 100%;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+
+  .contenitoreGrafici{
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+
+  .inserisciFile{
+    font-size: 12px;
+  }
+
+  header{
+    background-image: linear-gradient(to top, #222222 0%, #3783e0 100%);
+    border: 5px solid black;
+    color: white;
+    height: 10%;
+    position: relative;
+  }
+
+  footer{
+    background-image: linear-gradient(to bottom, #222222 0%, #3783e0 100%);
+    border: 5px solid black;
+    color: white;
+    height: 10%;
+    position: relative;
+  }
+
+  .logout{
+    color: white;
+  }
+
+  .logout:hover{
+    color: white;
+    background-color: darkred;
+    text-decoration: none;
+  }
+
+  .pulsanti{
+    font-size: 15px;
+    margin-top: 35px;
+  }
+
+  .nomeCognomeEmail{
+    text-align: justify;
+  }
+
+  .sidebar {
+    background-image: linear-gradient(to left, #222222 0%, #3783e0 100%);
+    /*border-right: 5px solid black;*/
+    border-left: 5px solid black;
+    font-size: 15px;
+    width: 28%;
+  }
+
+  .upload{
+    background-color: #222222;
+    border-color: black;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 4px;
+    padding: 5px;
+    position: center;
+  }
+
+  .upload2{
+    background-color: #222222;
+    border-color: black;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    padding: 5px;
+    position: center;
+  }
+}
+
+/*-------------------------1024-------------*/
+
+@media screen and (min-width: 1024px){
+  .colonna{
+    background-image: url("../img/sfondo_azzurro.jpg");
+    background-size: cover;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .contenitore{
+    height: 100%;
+    width: 100%;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+
+  .contenitoreGrafici{
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+
+  header{
+    background-image: linear-gradient(to top, #222222 0%, #3783e0 100%);
+    border: 5px solid black;
+    color: white;
+    height: 10%;
+    position: relative;
+  }
+
+  footer{
+    background-image: linear-gradient(to bottom, #222222 0%, #3783e0 100%);
+    border: 5px solid black;
+    color: white;
+    height: 10%;
+    position: relative;
+  }
+
+  .logout{
+    color: white;
+  }
+
+  .logout:hover{
+    color: white;
+    background-color: darkred;
+    text-decoration: none;
+  }
+
+  .nomeCognomeEmail{
+    text-align: justify;
+  }
+
+  .sidebar{
+    background-image: linear-gradient(to left, #222222 0%, #3783e0 100%);
+    /*border-right: 5px solid black;*/
+    border-left: 5px solid black;
+    color: white;
+  }
+}
+
+/*-------------------GRAPHICS-------------*/
+
+.contenitore{
+  height: 100%;
+  width: 100%;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+
+.contenitoreGrafici{
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+
+header{
+  background-image: linear-gradient(to top, #222222 0%, #3783e0 100%);
+  border: 5px solid black;
+  color: white;
+  height: 10%;
+  position: relative;
+}
+
+footer{
+  background-image: linear-gradient(to bottom, #222222 0%, #3783e0 100%);
+  border: 5px solid black;
+  color: white;
+  height: 10%;
+  position: relative;
+}
+
+
+
+.riga{
+  display: flex;
+  height: 80%;
+  width: 100%;
+}
+
+.scrittaWebAppCovid{
+  font-size: 70px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
